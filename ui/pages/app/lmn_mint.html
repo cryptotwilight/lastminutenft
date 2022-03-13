@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Lastminute NFT - Mint</title>
+  <!-- base:css -->
+  <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../vendors/base/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="../../vendors/select2/select2.min.css">
+  <link rel="stylesheet" href="../../vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_horizontal-navbar.html -->
+        
+        <div class="horizontal-menu">
+      <nav class="navbar top-navbar col-lg-12 col-12 p-0">
+        <div class="container-fluid">
+          <div class="navbar-menu-wrapper d-flex align-items-center justify-content-between">
+            <ul class="navbar-nav navbar-nav-left">
+              <li class="nav-item ms-0 me-5 d-lg-flex d-none">
+              
+              </li>
+              <li class="nav-item dropdown">
+              
+              </li>
+              <li class="nav-item dropdown">
+              
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link count-indicator "></a>
+              </li>
+              <li class="nav-item nav-search d-none d-lg-block ms-3">
+              
+              </li>	
+            </ul>
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                <a class="navbar-brand brand-logo" href="../../index.html"><img src="../../images/logo.svg" alt="logo"/></a>
+                <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../images/logo-mini.svg" alt="logo"/></a>
+            </div>
+            <ul class="navbar-nav navbar-nav-right">
+                <li class="nav-item dropdown  d-lg-flex d-none">
+                  <button type="button" class="btn btn-inverse-primary btn-sm">Connect Web 3 </button>
+                </li>
+                <li class="nav-item dropdown d-lg-flex d-none">
+                  
+                </li>
+                <li class="nav-item dropdown d-lg-flex d-none">
+                  
+                </li>
+                <li class="nav-item nav-profile dropdown">
+                  
+                </li>
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="horizontal-menu-toggle">
+              <span class="mdi mdi-menu"></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <nav class="bottom-navbar">
+        <div class="container">
+          <ul class="nav page-navigation">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">
+                <i class="mdi mdi-file-document-box menu-icon"></i>
+                <span class="menu-title">Dashboard</span>
+              </a>
+            </li>
+      <li class="nav-item">
+      <a href="lmn_mint.html" class="nav-link">
+        <i class="mdi mdi-candycane menu-icon"></i>
+        <span class="menu-title">Mint</span>
+        <i class="menu-arrow"></i>
+      </a>
+     </li>
+            <li class="nav-item">
+                <a href="lmn_gallery.html" class="nav-link">
+                  <i class="mdi mdi-cube-outline menu-icon"></i>
+                  <span class="menu-title">Gallery</span>
+                  <i class="menu-arrow"></i>
+                </a>           
+            </li>         
+            <li class="nav-item">
+                <a href="lmn_stats.html" class="nav-link">
+                  <i class="mdi mdi-finance menu-icon"></i>
+                  <span class="menu-title">Minute Stats</span>
+                  <i class="menu-arrow"></i>
+                </a>
+            </li>   
+          </ul>
+
+        </div>
+      </nav>
+    </div>
+        
+        <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Mint your Lastminute NFT</h4>
+                  <p class="card-description">
+                   Upload, mint and stake to your NFT
+                  </p>
+                  <form class="forms-sample">
+                    <div class="form-group">
+                      <label  for="nft_title">NFT Title</label>
+                      <input id="nft_title" type="text" class="form-control"  placeholder="nft title">
+                    </div>
+                    <div class="form-group">
+                      <label for="nft_file">Upload Pic</label>
+                      <input id="nft_file"" type="file" class="form-control" placeholder="nft file">
+                    </div>
+                    <div class="form-group"> 
+                      <label>Select Stake Currency</label>
+                      <label for="stake_currency_select">Select Stake Amount</label>
+											<select id="stake_currency_select"> 
+											  <option>ETH </option>
+											  <option>USDC</option>
+											  <option>DAI</option>
+											  <option>USDT</option>
+											</select>
+                    </div>
+                    <div class="form-group">
+                      <label for="stake_amount_span">Select Stake Amount</label>
+                      <span id="stake_amount_span"></span>                      
+                    </div>
+      
+                    <div  class="form-group"> 
+                      <button id="approve_button" type="submit" class="btn btn-primary me-2">Approve Payment Currency</button>
+                      
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Select Prediction Period</label>
+                      <div class="form-group">
+                        <div class="form-check form-check-primary">
+                          <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value="24" name="prediction_period" >
+                            24 hours
+                          </label>
+                          <div class="form-check form-check-primary">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" value="12" name="prediction_period" >
+                              12 hours
+                            </label>
+                          </div>
+                          <div class="form-check form-check-primary">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" value="6" name="prediction_period" >
+                              6 hours
+                            </label>
+                          </div>
+                          <div class="form-check form-check-primary">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" value="1" name="prediction_period" >
+                              1 hour
+                            </label>
+                          </div>
+
+                        </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">NFT Prediction Position (Lit or Rekt)</label>
+                      <div class="col-sm-4">
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value="Lit" name="prediction">
+                            Lit
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-sm-5">
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value="Rekt" name="prediction" >
+                            Rekt
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="exampleInputMobile" class="col-sm-3 col-form-label">Population Size (max 1000)</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" id="exampleInputMobile" >
+                      </div>
+                    </div>
+                    <a href="#" id="mint_button" class="btn btn-primary me-2">Mint</a>
+                    <button class="btn btn-light">Cancel</button>
+                  </form>
+                </div>
+              </div>
+            </div> 
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4>NFT Mint Result</h4>
+                  <span id="mint_result_span"></span>
+                  </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+          <div class="footer-wrap">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © <a href="https://www.blockstarlogic.com/" target="_blank">Block Star Logic </a>2022</span>
+              
+            </div>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- base:js -->
+  <script src="../../vendors/base/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="../../js/template.js"></script>
+  <!-- endinject -->
+  <!-- plugin js for this page -->
+  <script src="../../vendors/typeahead.js/typeahead.bundle.min.js"></script>
+  <script src="../../vendors/select2/select2.min.js"></script>
+  <!-- End plugin js for this page -->
+  <!-- Custom js for this page-->
+  <script src="../../js/file-upload.js"></script>
+  <script src="../../js/typeahead.js"></script>
+  <script src="../../js/select2.js"></script>
+  <!-- End custom js for this page-->
+
+  <script> 
+
+
+
+const stakeCurrencySelect = ge("stake_currency_select");
+const stakeAmountSpan = ge("stake_amount_span");
+const mintResponse = ge("mint_result");
+const mintButton = ge("mint_button");
+mintButton.addEventListener('click', mint); 
+
+const nftTitle = ge("nft_title");
+const nftFile = ge("nft_file"); 
+
+const predictionPeriod = ge("prediction_period");
+const prediction = ge("prediction");
+const populationSice = ge("population_size");
+
+const approveButton = ge("approve_button");
+approveButton.addEventListener('click',approve);
+
+const account = "me.eth";
+const mintResultSpan = ge("mint_result_span");
+
+function approve(){
+
+}
+
+function mint() {
+
+
+  console.log("minting");
+  // sort out evm stuff; 
+  var predictionPeriodvalue = document.querySelector('input[name="prediction_period"]:checked').value;
+  
+  console.log(nftFile);
+  console.log(nftFile.value);
+  console.log(nftFile.files[0]);
+  mintNFT("0x3f943cE891Ab919DEFb0f0815511d50Ac689b6Fe", account, nftTitle.value,  nftFile.files[0])
+
+
+  console.log("minted");
+}
+
+stakeCurrencySelect.addEventListener("click",switchCurrency);
+
+function switchCurrency() {
+  var currency = stakeCurrencySelect.value; 
+  stakeAmountSpan.firstChild.remove();
+  buildSelect(stakeAmountSpan, currency, "stake_currency_select");
+}
+
+buildSelect(stakeAmountSpan, "ETH", "stake_currency_select");
+
+function buildSelect(node, currency, name){
+  var select = ce("select");
+  select.setAttribute("id", name);
+  node.appendChild(select);
+  var amounts = [5,10,15,20];
+  for(var x = 0; x < amounts.length; x++){
+    var option = ce("option");
+    var amount = amounts[x];
+    option.setAttribute("value", amount );
+    select.appendChild(option);
+    fetchPriceAndMultiply(currency, option, amount, "USD");
+  }		
+}
+
+    async function fetchPriceAndMultiply(currency, node, amount, denomination) {
+        var url = "https://api.covalenthq.com/v1/pricing/tickers/?tickers=" + currency + "&quote-currency="+denomination+"&format=JSON&key=ckey_43370c93a0914e429ae00eca81d";
+  fetch(url).then(function(response) {
+                respData = response.json();
+                console.log("response data :- ");
+                console.log(respData);
+                return respData
+            })
+            .then(function(data) {
+                console.log("processing data");
+                console.log(data.data);
+                var price = amount +" "+denomination+" ( " + amount / (data.data.items[0].quote_rate ) + " ["+currency+"] )";
+                console.log("price: " + price);
+                var priceTxt = document.createTextNode(price);
+                node.appendChild(priceTxt);
+                return price;
+            })
+            .catch(function(err) {
+                console.log(err);
+            });
+    }
+
+
+const form = new FormData();
+
+const options = {
+    method: 'POST',
+    body: form,
+    headers: {
+        "Authorization": "222b05ce-c37f-4bdd-b40e-2a94f3efa570",
+    },
+};
+
+
+
+async function mintNFT(mintAddress, user, title,  file) {
+    console.log("minting" + mintAddress + " " + user + " file:: " + file + " title:: " + title);
+    
+    form.append('file', file);
+
+    await fetch("https://api.nftport.xyz/v0/mints/easy/files?" + new URLSearchParams({
+            chain: 'rinkeby',
+            name: "Lastminute NFT by : " + user,
+            description: title,
+            mint_to_address: mintAddress,
+        }), options)
+        .then(function(response) {
+          console.log(response);
+            return response.json()
+        })
+        .then(function(responseJson) {
+            // Handle the response
+            console.log(responseJson.transaction_external_url);
+
+            var date = new Date();
+            const options = {
+                timeZone: "GMT",
+                year: "numeric",
+                month: "numeric",
+                day: "numeric",
+                hour12: false,
+                hour: "numeric",
+                minute: "numeric",
+                seconds: "numeric"
+            }
+            var localized = date.toLocaleDateString("en-UK", options);
+
+                       // mintResponse.innerHTML = responseJson;
+            console.log(responseJson);
+            buildMintResultDisplay(responseJson);
+
+
+        })
+    console.log("minted");
+}
+
+function buildMintResultDisplay(response) {
+  mintResultSpan.innerHTML = ""+
+  " <table>"+ 
+      "<tr>"+ 
+        "<td>EVM Chain</td>"+
+        "<td>"+response.chain+"</td>"+
+      "</tr>"+ 
+      "<tr>"+ 
+        "<td>Contract Address</td>"+
+        "<td>"+response.contract_address+"</td>"+
+      "</tr>"+
+      "<tr>"+ 
+        "<td>Description</td>"+
+        "<td>"+response.description+"</td>"+
+      "</tr>"+
+      "<tr>"+ 
+        "<td>Errors</td>"+
+        "<td>"+response.error+"</td>"+
+      "</tr>"+
+      "<tr>"+ 
+        "<td>Minted To Address</td>"+
+        "<td>"+response.mint_to_address+"</td>"+
+      "</tr>"+
+      "<tr>"+ 
+        "<td>Name</td>"+
+        "<td>"+response.name+"</td>"+
+      "</tr>"+
+      "<tr>"+ 
+        "<td>Response</td>"+
+        "<td>"+response.response+"</td>"+
+      "</tr>"+
+      "<tr>"+ 
+        "<td>Transaction View</td>"+
+        "<td>"+response.transaction_external_url+"</td>"+
+      "</tr>"+
+      "<tr>"+ 
+        "<td>Transaction Hash</td>"+
+        "<td>"+response.transaction_hash+"</td>"+
+      "</tr>"+
+    "</table>"
+
+}
+
+
+function ce(element) {
+  console.log("element : " + element);
+  return document.createElement(element);
+}
+
+function ge(element) {
+  return document.getElementById(element);
+}
+
+  </script>
+</body>
+
+</html>

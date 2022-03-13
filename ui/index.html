@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Lastminute NFT</title>
+    <!-- base:css -->
+    <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="vendors/base/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="images/favicon.png" />
+  </head>
+  <body>
+    <div class="container-scroller">
+	
+		<!-- partial:partials/_horizontal-navbar.html -->
+    <div class="horizontal-menu">
+      <nav class="navbar top-navbar col-lg-12 col-12 p-0">
+        <div class="container-fluid">
+			<div class="navbar-menu-wrapper d-flex align-items-center justify-content-between">
+				<ul class="navbar-nav navbar-nav-left">
+				  <li class="nav-item ms-0 me-5 d-lg-flex d-none">
+				  
+				  </li>
+				  <li class="nav-item dropdown">
+				  
+				  </li>
+				  <li class="nav-item dropdown">
+				  
+				  </li>
+				  <li class="nav-item dropdown">
+					<a href="#" class="nav-link count-indicator "></a>
+				  </li>
+				  <li class="nav-item nav-search d-none d-lg-block ms-3">
+				  
+				  </li>	
+				</ul>
+				<div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+					<a class="navbar-brand brand-logo" href="../../index.html"><img src="../../images/logo.svg" alt="logo"/></a>
+					<a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../images/logo-mini.svg" alt="logo"/></a>
+				</div>
+				<ul class="navbar-nav navbar-nav-right">
+					<li class="nav-item dropdown  d-lg-flex d-none">
+					  <button type="button" class="btn btn-inverse-primary btn-sm">Connect Web 3 </button>
+					</li>
+					<li class="nav-item dropdown d-lg-flex d-none">
+					  
+					</li>
+					<li class="nav-item dropdown d-lg-flex d-none">
+					  
+					</li>
+					<li class="nav-item nav-profile dropdown">
+					  
+					</li>
+				</ul>
+				<button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="horizontal-menu-toggle">
+				  <span class="mdi mdi-menu"></span>
+				</button>
+			  </div>
+        </div>
+      </nav>
+      <nav class="bottom-navbar">
+        <div class="container">
+            <ul class="nav page-navigation">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  <i class="mdi mdi-file-document-box menu-icon"></i>
+                  <span class="menu-title">Dashboard</span>
+                </a>
+              </li>
+			  <li class="nav-item">
+				<a href="pages/app/lmn_mint.html" class="nav-link">
+				  <i class="mdi mdi-candycane menu-icon"></i>
+				  <span class="menu-title">Mint</span>
+				  <i class="menu-arrow"></i>
+				</a>
+			 </li>
+              <li class="nav-item">
+                  <a href="pages/app/lmn_gallery.html" class="nav-link">
+                    <i class="mdi mdi-cube-outline menu-icon"></i>
+                    <span class="menu-title">Gallery</span>
+                    <i class="menu-arrow"></i>
+                  </a>              
+              </li>         
+              <li class="nav-item">
+                  <a href="pages/app/lmn_stats.html" class="nav-link">
+                    <i class="mdi mdi-finance menu-icon"></i>
+                    <span class="menu-title">Minute Stats</span>
+                    <i class="menu-arrow"></i>
+                  </a>
+              </li>   
+            </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- partial -->
+		<div class="container-fluid page-body-wrapper">
+			<div class="main-panel">
+				<div class="content-wrapper">
+					<div class="row">
+						<div class="col-sm-6 mb-4 mb-xl-0">
+							<div class="d-lg-flex align-items-center">
+								<div>
+									<h3 class="text-dark font-weight-bold mb-2">Lastminute NFT</h3>									
+								</div>
+
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="d-flex align-items-center justify-content-md-end">
+									<!-- SPACE -->
+							</div>
+						</div>
+					</div>
+					<div class="row mt-4">
+						<div class="col-lg-8 grid-margin stretch-card">
+							<div class="card">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-lg-4">
+											<h4 class="card-title">Sales Difference</h4>
+											<canvas id="salesDifference"></canvas>
+											<p class="mt-3 mb-4 mb-lg-0">Lorem ipsum dolor sit amet,
+												consectetur adipisicing elit.
+											</p>
+										</div>
+										<div class="col-lg-5">
+											<h4 class="card-title">Best Sellers</h4>
+											<div class="row">
+												<div class="col-sm-4">
+													<ul class="graphl-legend-rectangle">
+														<li><span class="bg-danger"></span>Automotive</li>
+														<li><span class="bg-warning"></span>Books</li>
+														<li><span class="bg-info"></span>Software</li>
+														<li><span class="bg-success"></span>Video games</li>
+													</ul>
+												</div>
+												<div class="col-sm-8 grid-margin">
+													<canvas id="bestSellers"></canvas>
+												</div>
+											</div>
+											<p class="mt-3 mb-4 mb-lg-0">Lorem ipsum dolor sit amet,
+												consectetur adipisicing elit.
+											</p>
+										</div>
+										<div class="col-lg-3">
+											<h4 class="card-title">Social Media Statistics</h4>
+											<div class="row">
+												<div class="col-sm-12">
+													<div class="progress progress-lg grouped mb-2">
+														<div class="progress-bar  bg-danger" role="progressbar" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+														<div class="progress-bar bg-info" role="progressbar" style="width: 10%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+														<div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+														<div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+												<div class="col-sm-12">
+													<ul class="graphl-legend-rectangle">
+														<li><span class="bg-danger"></span>Instagram (15%)</li>
+														<li><span class="bg-warning"></span>Facebook (20%)</li>
+														<li><span class="bg-info"></span>Website (25%)</li>
+														<li><span class="bg-success"></span>Youtube (40%)</li>
+													</ul>
+												</div>
+											</div>
+											<p class="mb-0 mt-2">Lorem ipsum dolor sit amet,
+												consectetur adipisicing elit.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 mb-3 mb-lg-0">
+							<div class="card text-center">
+								<div class="card-body pb-0">
+									<h1>Lit or Rekt - Join the fun</h1>
+									<img src="images/apple-icon-180x180.png" alt="">  
+									<h2 class="mt-3 text-white mb-3 font-weight-bold">
+									</h2>
+									<p>${title }
+									</p>
+							
+								</div>
+								<table width="100%"> 
+									<tr> 
+										<td><a href="#" class="btn btn-success btn-rounded btn-fw">Lit</a></td>
+										<td><a href="#" class="btn btn-info btn-rounded btn-fw">Pass</a></td>
+										<td><a href="#" class="btn btn-danger btn-rounded btn-fw">Rekt</a></td>
+									</tr>
+								</table>
+							</div>
+							<div class="card  text-center">
+								Join In 
+								<table> 
+									<tr> 
+										<td>
+											<label for="stake_currency_select">Select Stake Currency</label>
+											<select id="stake_currency_select"> 
+											  <option value="ETH">ETH </option>
+											  <option value="USDC">USDC</option>
+											  <option value="DAI">DAI</option>
+											  <option value="USDT">USDT</option>
+											</select>
+										</td>
+										<td>
+											<label for="stake_amount">Select Stake Amount</label>
+											<span id="stake_amount_span"></span>
+										</td>
+										<td>
+											<a href="#" class="btn btn-primary btn-rounded btn-fw">Approve</a>
+										</td>
+										<td>      
+											<label for="exampleInputEmail1">Position</label>
+											<select id="stake_amount"> 
+											  <option>Lit</option>
+											  <option>Rekt</option>
+											</select>											
+										</td>
+										<td>
+											<a href="#" class="btn btn-success btn-rounded btn-fw">Join</a>
+										</td>
+									</tr>
+									<tr> 
+										<td colspan="4"> 
+											time to end: 
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-8 flex-column d-flex stretch-card">
+							<div class="row">
+								<div class="col-lg-4 d-flex grid-margin stretch-card">
+									<div class="card bg-primary">
+										<div class="card-body text-white">
+											Outstanding Claims
+											<h2 class="text-dark mb-2 font-weight-bold"><span id="claims"></span></h2>
+											<a href="#" class="btn btn-info btn-rounded btn-fw">Claim All</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 d-flex grid-margin stretch-card">
+									<div class="card sale-diffrence-border">
+										<div class="card-body">
+											Open Positions
+											<h2 class="text-dark mb-2 font-weight-bold"><span id="positions"></span></h2>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 d-flex grid-margin stretch-card">
+									<div class="card sale-visit-statistics-border">
+										<div class="card-body">
+											Winnings to Date:
+											<h2 class="text-dark mb-2 font-weight-bold"><span id="winnings"></span></h2>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="col-sm-4 flex-column d-flex stretch-card">
+							<div class="row flex-grow">
+								<div class="col-sm-12 grid-margin stretch-card">
+									
+								</div>
+								<div class="col-sm-12 grid-margin stretch-card">
+									<!--space -->
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+				<!-- content-wrapper ends -->
+				<!-- partial:partials/_footer.html -->
+				<footer class="footer">
+          <div class="footer-wrap">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © <a href="https://www.blockstarlogic.com/" target="_blank">Block Star Logic </a>2021</span>              
+            </div>
+          </div>
+        </footer>
+				<!-- partial -->
+			</div>
+			<!-- main-panel ends -->
+		</div>
+		<!-- page-body-wrapper ends -->
+    </div>
+		<!-- container-scroller -->
+    <!-- base:js -->
+    <script src="vendors/base/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page-->
+    <!-- End plugin js for this page-->
+    <!-- inject:js -->
+    <script src="js/template.js"></script>
+    <!-- endinject -->
+    <!-- plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <script src="vendors/chart.js/Chart.min.js"></script>
+    <script src="vendors/progressbar.js/progressbar.min.js"></script>
+		<script src="vendors/chartjs-plugin-datalabels/chartjs-plugin-datalabels.js"></script>
+		<script src="vendors/justgage/raphael-2.1.4.min.js"></script>
+		<script src="vendors/justgage/justgage.js"></script>
+    <script src="js/jquery.cookie.js" type="text/javascript"></script>
+    <!-- Custom js for this page-->
+    <script src="js/dashboard.js"></script>
+    <!-- End custom js for this page-->
+	<script> 
+		const outstandingClaimsDisplay = ge("outstanding_claims");
+		const openPositionsDisplay = ge("open_positions");
+		const winningsToDateDisplay = ge("winnings_to_date");
+		const stakeCurrencySelect = ge("stake_currency_select");
+		const stakeAmountSpan = ge("stake_amount_span");
+		
+		stakeCurrencySelect.addEventListener("click",switchCurrency);
+
+		function switchCurrency() {
+			var currency = stakeCurrencySelect.value; 
+			stakeAmountSpan.firstChild.remove();
+			buildSelect(stakeAmountSpan, currency, "stake_currency_select");
+		}
+
+
+		buildSelect(stakeAmountSpan, "ETH", "stake_currency_select");
+
+		function buildSelect(node, currency, name){
+			var select = ce("select");
+			select.setAttribute("id", name);
+			node.appendChild(select);
+			var amounts = [5,10,15,20];
+			for(var x = 0; x < amounts.length; x++){
+				var option = ce("option");
+				var amount = amounts[x];
+				option.setAttribute("value", amount );
+				select.appendChild(option);
+				fetchPriceAndMultiply(currency, option, amount, "USD");
+			}		
+		}
+
+        async function fetchPriceAndMultiply(currency, node, amount, denomination) {
+            var url = "https://api.covalenthq.com/v1/pricing/tickers/?tickers=" + currency + "&quote-currency="+denomination+"&format=JSON&key=ckey_43370c93a0914e429ae00eca81d";
+			fetch(url).then(function(response) {
+                    respData = response.json();
+                    console.log("response data :- ");
+                    console.log(respData);
+                    return respData
+                })
+                .then(function(data) {
+                    console.log("processing data");
+                    console.log(data.data);
+                    var price = amount +" "+denomination+" ( " + amount / (data.data.items[0].quote_rate ) + " ["+currency+"] )";
+                    console.log("price: " + price);
+                    var priceTxt = document.createTextNode(price);
+                    node.appendChild(priceTxt);
+                    return price;
+                })
+                .catch(function(err) {
+                    console.log(err);
+                });
+        }
+
+		function ce(element) {
+			console.log("element : " + element);
+			return document.createElement(element);
+		}
+
+		function ge(element) {
+			return document.getElementById(element);
+		}
+
+	</script> 
+  </body>
+</html>
